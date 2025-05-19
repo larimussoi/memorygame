@@ -1,0 +1,117 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F2E6D8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 50px;
+  font-family: "Underdog", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #011F26;
+  font-weight: bold;
+}
+
+.jogo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  max-width: 440px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.revealed .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-back {
+  background-image: url('img/cyclops.png');
+  background-color: #011F26;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+#restart-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3D6973;
+  color: white;
+  cursor: pointer;
+}
+
+footer{
+  text-align: center;
+  margin-top: 80px;
+  font-size: 10px;
+}
