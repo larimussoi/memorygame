@@ -1,14 +1,14 @@
-#Jogo da Memória
+##Jogo da Memória
 
 Um jogo da memória interativo desenvolvido com HTML, CSS e JavaScript puro, com sistema de timer e armazenamento de recorde utilizando localStorage.
 
 O objetivo é simples: encontrar todos os pares de cartas no menor tempo possível.
 
-#Demonstração
+##Demonstração
 
 https://memorygame-sandy-alpha.vercel.app/
 
-#Funcionalidades
+##Funcionalidades
 
  Geração dinâmica das cartas
 
