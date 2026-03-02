@@ -1,14 +1,14 @@
-##Jogo da Memória
+**Jogo da Memória
 
 Um jogo da memória interativo desenvolvido com HTML, CSS e JavaScript puro, com sistema de timer e armazenamento de recorde utilizando localStorage.
 
 O objetivo é simples: encontrar todos os pares de cartas no menor tempo possível.
 
-##Demonstração
+**Demonstração
 
 https://memorygame-sandy-alpha.vercel.app/
 
-##Funcionalidades
+**Funcionalidades
 
  Geração dinâmica das cartas
 
@@ -26,7 +26,7 @@ https://memorygame-sandy-alpha.vercel.app/
 
  Layout responsivo e animação de flip nas cartas
 
-#Tecnologias Utilizadas
+**Tecnologias Utilizadas
 
 HTML5
 
@@ -58,7 +58,7 @@ O modal exibe o tempo final
 
 O sistema verifica se foi um novo recorde
 
-#Lógica Principal
+**Lógica Principal
 🔹 Controle de Estado
 
 firstCard
@@ -83,7 +83,7 @@ Armazenado no localStorage
 
 Comparado automaticamente ao final da partida
 
-#Como Executar o Projeto
+**Como Executar o Projeto
 
 Clone o repositório:
 
@@ -93,6 +93,6 @@ Abra o arquivo index.html no navegador.
 
 Ou simplesmente abra o projeto em um servidor local (ex: Live Server do VS Code).
 
-Desenvolvido por
+**Desenvolvido por
 
 Larissa Tomé Mussoi
